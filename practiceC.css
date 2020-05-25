@@ -17,7 +17,7 @@ html, body, {
 
 @font-face {
   font-family: SF-Orson;
-  src: url(SF-Orson-Casual-Light.woff);
+  src: url('SF-Orson-Casual-Light.woff') format('woff');
 }
 .tab {
     text-align: center;
