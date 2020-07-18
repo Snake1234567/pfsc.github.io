@@ -89,7 +89,7 @@ border-color: #fff #fff #fff #fff;
     background: #000080;
     color: #fff;
         font-size: 1.5vw;
-    	padding: 2vh .5vw;
+    	padding: 2.1vh .5vw;
 }
 
 .topline ul li a.quick {
@@ -113,7 +113,7 @@ border-color: #fff #fff #fff #fff;
     background: #000080;
     color: #89cff0;
         font-size: 1.5vw;
-    	padding: 2vh .5vw;
+    	padding: 2.1vh .5vw;
 }
 
 .topline .tab {
@@ -207,7 +207,7 @@ ul img {
 ul li a { 
     text-align: center;
     font-size: 1.35vw;
-	padding: 4vh 1.5vw;
+	padding: 4.1vh 1.5vw;
 	background: #fff;
 	color: #000080;
 /*
