@@ -1,60 +1,374 @@
-html {
-    background: #e6e9e9;
-    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
-    -webkit-font-smoothing: antialiased;
-}
+<!--https://www.htmlcommentbox.com/-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home - Pittsburgh Free Stroke Clinic</title>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="iconreal.png">
+<link rel="apple-touch-icon" href="iconreal.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans%3A400%2C400italic%2C600%2C700%2C700italic%7COswald%3A400%2C300%7CVollkorn%3A400%2C400italic'>
+        <link  href="sample.css" rel="stylesheet" type "text/css">
+        <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Passion One' rel='stylesheet'>
 
-body {
-    background: #fff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
-    color: #545454;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2em 2em 4em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    font-weight: 600;
-    line-height: 1.3;
-}
-
-h2 {
-    margin-top: 1.3em;
-}
-
-a {
-    color: #0083e8;
-}
-
-b, strong {
-    font-weight: 600;
-}
-
-samp {
-    display: none;
-}
-
-img {
-    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-    background: transparent;
-    border: 10px solid rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
-    display: block;
-    margin: 1.3em auto;
-    max-width: 95%;
-}
-
-@keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
+<script>
+function showResult(str) {
+  if (str.length==0) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  var xmlhttp=new XMLHttpRequest();
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
     }
-    100% {
-        -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
-    }
+  }
+  xmlhttp.open("GET","livesearch.php?q="+str,true);
+  xmlhttp.send();
 }
+</script>
+    </head>
+    <body>
+
+<!--
+<form>
+<input type="text" size="30" onkeyup="showResult(this.value)">
+<div id="livesearch"></div>
+</form>
+-->
+        <div class="topline">
+             <div class="spreadout">
+                        <ul>
+	<li><a class="number" style="text-decoration:none"  href="tel:267-909-1170">CALL US: 123-456-7890</a>
+                            <li><a style="text-decoration:none" href="javascript:void(0);">Make an Appointment</a>
+                                <li><a class="line" style="text-decoration:none" href="javascript:void(0);">|</a>
+                            <li><a style="text-decoration:none" href="https://www.facebook.com/">Our FaceBook Page</a>
+                                                                <li><a class="line" style="text-decoration:none" href="javascript:void(0);">|</a>
+                            <li><a style="text-decoration:none" href="javascript:void(0);">Knowing the Signs</a>
+<!--                            <li><a class="quick" style="text-decoration:none" href="javascript:void(0);">Quick Links:</a>-->
+</ul>
+            </div>
+            </div>
+        <div class="header">
+<!--                <h1>Pittsburgh Free Stroke Clinic</h1>-->
+            <div class="links">
+                </div>
+<!--
+  <h1>Header</h1>
+  <p>My supercool header</p>
+-->
+<!--
+            <a href="test.html">
+  <img src="logo2.png"  width="130" height="71"/>
+</a>
+-->
+            
+</div>
+                <div class="header2">
+                    <div class="spreadout">
+                        <ul>
+                                                                                                    <a href="test.html">
+  <img src="logo2.png"/>
+</a>
+	<li><a style="text-decoration:none" href="javascript:void(0);">CAN'T MAKE IT TO THE CLINIC?</a>
+            <li><a class="line" style="text-decoration:none" href="javascript:void(0);">|</a>
+                            <li><a style="text-decoration:none" href="javascript:void(0);">SUPPORT GROUP</a>
+                                <li><a class="line" style="text-decoration:none" href="javascript:void(0);">|</a>
+                                <li><a style="text-decoration:none" href="about.html">VOLUNTEER</a>
+<!--                                    <li><a class="line" style="text-decoration:none" href="javascript:void(0);">|</a>-->
+<!--	<li><a style="text-decoration:none" href="javascript:void(0);">OUR IMPACT</a>-->
+        <li><a class="line" style="text-decoration:none" href="javascript:void(0);">|</a>
+                            <li><a style="text-decoration:none" href="javascript:void(0);">ABOUT US</a>
+                                <li><a class="line" style="text-decoration:none" href="javascript:void(0);">|</a>
+                            <li><a style="text-decoration:none" href="test.html#contact_information">CLINIC INFORMATION</a>
+                                <li><a class="line" style="text-decoration:none" href="javascript:void(0);">|</a>
+                            <li><a style="text-decoration:none" href="javascript:void(0);">HOME</a>
+<!--                                <li><a class="line" style="text-decoration:none" href="javascript:void(0);">|</a>-->
+<!--                            <li><a style="text-decoration:none" href="javascript:void(0);">KNOW THE SIGNS</a>-->
+</ul>
+<!--
+                                                <ul>
+            <a style="text-decoration:none" href="test.html">HOME</a>
+            <a style="text-decoration:none" href="about.html">ABOUT</a>
+            <a style="text-decoration:none" href="contact.html">CONTACT</a>
+        </ul>
+-->
+<!--
+                        <div class="tab">
+  <div class="starttab">
+                            <button class="tablinks" onclick="window.location.href = 'test.html';">HOME</button>non profit
+      </div>
+                            <div class="starttab">
+  <button class="tablinks" onclick="window.location.href = 'about.html';">CLINIC INFORMATION</button> 
+                                 </div>
+                            <div class="starttab">
+  <button class="tablinks" onclick="window.location.href = 'contact.html';">ABOUT OUR TEAM</button>
+                                 </div>
+                            <div class="starttab">
+  <button class="tablinks" onclick="window.location.href = 'test.html';">OUR IMPACT</button>
+                                 </div>
+                            <div class="starttab">
+  <button class="tablinks" onclick="window.location.href = 'about.html';">VOLUNTEER INFORMATION</button>
+                                 </div>
+                            <div class="starttab">
+  <button class="tablinks" onclick="window.location.href = 'contact.html';">SUPPORT GROUP</button>
+                                 </div>
+                            <div class="starttab">
+  <button class="tablinks" onclick="window.location.href = 'test.html';">CAN'T MAKE IT TO THE CLINIC?</button>
+                                 </div>
+                            <div class="starttab">
+  <button class="tablinks" onclick="window.location.href = 'about.html';">KNOW THE SIGNS</button>
+                                 </div>
+                            <div class="starttab">
+                            <button class="tablinks" onclick="window.location.href = 'contact.html';">FUNDING AND NONPROFIT STATUS</button>
+</div>
+                            </div>
+-->
+
+<!--
+<div id="London" class="tabcontent">
+  <h3>London</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+        </div>
+-->
+                        <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("tab");
+var btns = header.getElementsByClassName("button");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+                    </div>
+                    </div>
+                        <div class="header3">
+        </div>
+<!--        <div id="wrapper"></div>-->
+        <!-- Slideshow container -->
+<main class="main-content">
+  <section class="slideshow">
+    <div class="slideshow-inner">
+      <div class="slides">
+        <div class="slide is-active ">
+                      <div class="slide1">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">"</div>
+              <div class="text">
+                <p>A majority of the employees here are really nice. Most of them seem like they genuinely want to be there and really enjoy their jobs. They're very welcoming and it shows that they put effort into helping us.</p>
+              </div> 
+<!--
+              <a href="#" class="btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+-->
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="strokerehab1color.jpg" alt="" class="image" />
+          </div>
+        </div>
+        </div>
+        <div class="slide">
+            <div class="slide2">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">"</div>
+              <div class="text">
+                <p>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity</p>
+              </div> 
+              <a href="#" class="btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+            </div>
+        </div>
+          <div class="image-container">
+            <img src="strokerehab5color.jpg" alt="" class="image" />
+          </div>
+        </div>
+        </div>
+        <div class="slide">
+            <div class="slide3">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">"</div>
+              <div class="text">
+                <p>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity</p>
+              </div> 
+              <a href="#" class="btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+            </div>
+          </div>
+          <div class="image-container">
+            <img src="strokerehab2color.jpg" alt="" class="image" />
+          </div>
+        </div>
+        </div>
+        <div class="slide">
+            <div class="slide4">
+          <div class="slide-content">
+            <div class="caption">
+              <div class="title">"</div>
+              <div class="text">
+                <p>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defense, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity</p>
+              </div> 
+<!--
+              <a href="#" class="btn">
+                <span class="btn-inner">Learn More</span>
+              </a>
+-->
+            </div>
+          </div>
+          <div class="image-container"> 
+            <img src="strokerehab4color.jpg" alt="" class="image" />
+          </div>
+        </div>
+      </div>
+      <div class="pagination">
+        <div class="item is-active"> 
+          <span class="icon">1</span>
+        </div>
+        <div class="item">
+          <span class="icon">2</span>
+        </div>
+        <div class="item">
+          <span class="icon">3</span>
+        </div>
+        <div class="item">
+          <span class="icon">4</span>
+        </div>
+      </div>
+      <div class="arrows">
+        <div class="arrow prev">
+          <span class="svg svg-arrow-left">
+            <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+        </div>
+        <div class="arrow next">
+          <span class="svg svg-arrow-right">
+            <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+            <span class="alt sr-only"></span>
+          </span>
+        </div>
+      </div>
+    </div> 
+  </section>
+</main>
+<!-- partial -->
+        
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script><script  src="./script.js"></script>
+                        <div class="header4">
+        <p>The Pittsburgh Free Stroke Clinic is a free clinic for stroke survivors who do not have access to proper healthcare. Simple motor exercises are given to patients by trained undergraduate volunteers to help increase the quality of life for survivors.</p>
+        <div class="subtext">
+                            <p><i>*All patients are required to fill out a consent and liability form upon arrival to the clinic. Forms will be provided</i></p>
+                                    </div>
+                            </div>
+                <div class="pagebreak-blue">
+        </div>
+     <div class="icons-content">
+            <div class="title">The Pittsburgh Free Stroke Clinic at work</div>
+         <div class="text">How we are doing everything to help you</div>
+<div class="row">
+  <div class="column">
+    <img src="logotest5.png" alt="Snow" style="width:100%">
+      <div class="name">Our Non-Profit Status</div>
+      <div class="info">
+      <p>Our services are completely free of charge to all stroke victims</p>
+      </div>
+  </div>
+  <div class="column">
+    <img src="logotest6.png" alt="Forest" style="width:100%">
+                  <div class="name">Our Methods</div>
+      <div class="info">
+      <p>We use a multitude of techniques to improve the quality of living for victims</p>
+      </div>
+  </div>
+  <div class="column">
+    <img src="logotest7.png" alt="Mountains" style="width:100%">
+                  <div class="name">Our Story</div>
+      <div class="info">
+      <p>Discover our reasoning behind creating this non-profit</p>
+      </div>
+  </div>
+      <div class="column">
+    <img src="logotest8.png" alt="Mountains" style="width:100%">
+                    <div class="name">Our Support Group</div>
+      <div class="info">
+      <p>We even hold a weekly support group to act as a safe space for survivors</p>
+      </div>
+  </div>
+</div>
+         </div>
+    <div class="pagebreak-red">
+        </div>
+    <div class="center">
+        <div class="address">1986 Pitt Tech Rd, Winterville, NC 28590</div>
+            <div class="name">Pittsburgh Free Stroke Clinic</div>
+        </div>
+        <div class="pagebreak-red">
+        </div>
+     <div class="video-content">
+<iframe class="video" id="existing-iframe-example"
+          width="711" height="400"
+          src="https://www.youtube.com/embed/6PS8UDyRwGI?autoplay=1&mute=1&enablejsapi=1&loop=1&playlist=6PS8UDyRwGI"
+          frameborder="0"
+]          ></iframe>
+         <div class="text">The ONLY Free Stroke Clinic in Pittsburgh</div>
+<!--
+         <div class="information">
+             <p>We at PFSC pride ourselves on putting you first. We know how hard recovering from a life-threatening stroke is, so we are here to make the process easy and help you return to normal life. Our service is completely free of charge because we are a non-profit organization and are able to be kept running by our amazing sponsors.</p>
+         </div>
+-->
+         </div>
+        <div class="pagebreak-red">
+        </div>
+        <div class="sponsors">
+             <div class="title">Our Sponsors</div>
+            <img src="fakebrand4.png"  height="100" />
+            <img src="fakebrand2.png"  height="100" />
+            <img src="fakebrand5.png"  height="100" />
+         </div>
+        <div class="pagebreak-red">
+        </div>
+    <div class="footer">
+         </div>
+    
+<!--        <a href="file:///C:/Users/dmana/OneDrive/Documents/test.html#bio">-->
+<!--
+<a href="black%20triangle.png">
+            <img src="black%20triangle.png" />
+        </a>
+-->
+<!--
+<video width="400" controls autoplay>
+    <source src="RPReplay_Final1590080997.MOV" type="video/mp4">
+</video>
+                <p style="color:red" style="font-family:'Courier New'">This is another paragraph.</p>
+-->
+        <ul>
+            <a href="https://www.google.com/search?q=stroke&rlz=1C1CHBF_enUS881US881&oq=stroke&aqs=chrome..69i57j0l7.2283j0j7&sourceid=chrome&ie=UTF-8">how to stop a stroke</a>
+        </ul>
+    </body>
+</html>
