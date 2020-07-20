@@ -607,7 +607,7 @@ border-color: #fff #fff #fff #fff;
     float: right;
 }
 
-.topline {
+div.topline {
       padding: 0px;
     margin-bottom: 0px;
 /*  text-align: center;*/
