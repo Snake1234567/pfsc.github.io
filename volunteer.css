@@ -1,0 +1,597 @@
+/*https://www.patientpointdigitalsolutions.com/launch?gclid=EAIaIQobChMI1ZXX-dG-6gIVi4jICh17WQ4QEAAYASAAEgJtrfD_BwE*/
+
+html, body, {
+        width: 100%
+    height: 100%;
+      bottom:0;
+  top:0;
+  left:0;
+  right:0;
+/*    background: #690b01;*/
+/*
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+*/
+}
+
+@font-face {
+  font-family: SF-Orson;
+  src: url('SF-Orson-Casual-Light.woff');
+/*    src: url('SF-Orson-Casual-Light.woff') format ('woff');*/
+}
+* {
+    margin: 0; padding: 0;
+}
+
+.topline ul {
+    width: 100%;
+    margin-left: 0vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+/*	background: #808080;*/
+	list-style: none;
+	/* contain the list items */
+	overflow: hidden;
+	
+	/*margin: 0 auto;
+	display: table;*/ /* ul will behave like a table now */
+	
+	text-align: center;
+}
+
+.topline ul li {
+    height: 100%;
+	 float: right; 
+	display: inline-block;
+}
+
+.topline ul img {
+    
+    width: 20vh;
+    height: 11vh;
+    padding: 5px;
+    float: left;
+/*    background-color: #fff;*/
+}
+
+.topline ul li a { 
+    text-align: center;
+    font-size: 1vw;
+	padding: 2.6vh .5vw;
+	background: transparent;
+	color: #fff;
+/*
+     border-width: 0vw .05vw 0vw .05vw;  
+border-style: none dotted none dotted;
+border-color: #fff #fff #fff #fff;
+*/
+/*    margin: 0px;*/
+	
+	/*float: left;*/
+	/* some height would be nice */
+/*	line-height: 3em;*/
+	/* adjusting height */
+	display: block; /* or inline-block */
+}
+
+.topline ul li a.line {
+    color: #ffb3c6;
+    opacity: .6;
+        font-size: 1vw;
+    	padding: 2.6vh 0vw;
+}
+
+.topline ul li a.number {
+    background: #000080;
+    color: #fff;
+        font-size: 1.5vw;
+    	padding: 2.1vh .5vw;
+}
+
+.topline ul li a.quick {
+    background: #ff84a4;
+    color: #89cff0;
+        font-size: 1vw;
+    	padding: 2.6vh .5vw;
+}
+
+.topline ul li a:hover {
+	background: transparent;
+	color: #000080;
+    
+}
+
+.topline ul li a.line:hover {
+	background: transparent;
+	color: #e3e3e3;
+}
+
+.topline ul li a.number:hover {
+    background: #000080;
+    color: #89cff0;
+        font-size: 1.5vw;
+    	padding: 2.1vh .5vw;
+}
+
+.topline .tab {
+    text-align: center;
+/*    width: 100%;*/
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: #990a00;
+    
+}
+
+/* Style the buttons inside the tab */
+.topline .tab button {
+        text-align: center;
+    
+            font-family: SF-Orson; font-size: 1.25vw;
+/*    font-family: 'Alex Brush';font-size: 22px;*/
+    color: #fcf7f7;
+  background-color: inherit;
+/*    border: none;*/
+    border-width: 0vw .05vw 0vw .05vw;  
+border-style: none dotted none dotted;
+border-color: #fff #fff #fff #fff;
+    border: none;
+  float: left;
+  border-left-color: #dbdbdb;
+    
+  outline: none;
+  cursor: pointer;
+/*  padding: 4px .489%;*/
+  transition: .3s;
+/*  font-size: 17px;*/
+}
+.topline .starttab {
+        float:none
+    display: inline-block;
+    
+}
+
+/* Change background color of buttons on hover */
+.topline .tab button:hover {
+  background-color: #822727;
+}
+
+/* Create an active/current tablink class */
+.topline .tab button.active {
+  background-color: #000;
+}
+
+/* Style the tab content */
+.topline .tabcontent {
+  display: none;
+/*  padding: 6px 12px;*/
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+ul {
+    width: 100%;
+    margin-left: 0vw;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+/*	background: #808080;*/
+	list-style: none;
+	/* contain the list items */
+	overflow: hidden;
+	
+	/*margin: 0 auto;
+	display: table;*/ /* ul will behave like a table now */
+	
+	text-align: center;
+}
+
+ul li {
+    height: 100%;
+	 float: right; 
+	display: inline-block;
+	display: inline-block;
+}
+ul li .list {
+/*
+     border-width: 0vw .05vw 0vw .05vw;  
+border-style: none dotted none dotted;
+border-color: #fff #fff #fff #fff;
+*/
+/*    margin: 0px;*/
+	
+	/*float: left;*/
+	/* some height would be nice */
+/*	line-height: 3em;*/
+	/* adjusting height */
+	display: block; /* or inline-block */
+}
+ul img {
+/*    filter: sepia() saturate(10000000%) hue-rotate(34deg);*/
+
+
+/*    width: 20vh;*/
+    height: 11vh;
+    padding: 5px;
+    float: left;
+    margin-bottom: 5px;
+    margin-left: 10vw;
+/*    background-color: #fff;*/
+}
+
+ ul li a { 
+    text-align: center;
+    font-size: 1.35vw;
+	padding: 4.1vh 1vw;
+	background: #fff;
+	color: #000080;
+/*
+     border-width: 0vw .05vw 0vw .05vw;  
+border-style: none dotted none dotted;
+border-color: #fff #fff #fff #fff;
+*/
+/*    margin: 0px;*/
+	
+	/*float: left;*/
+	/* some height would be nice */
+/*	line-height: 3em;*/
+	/* adjusting height */
+	display: block; /* or inline-block */
+}
+ ul li .list a { 
+    text-align: center;
+    font-size: 1.35vw;
+	padding: 4.1vh 1vw;
+	background: #fff;
+	color: #000080;
+/*
+     border-width: 0vw .05vw 0vw .05vw;  
+border-style: none dotted none dotted;
+border-color: #fff #fff #fff #fff;
+*/
+/*    margin: 0px;*/
+	
+	/*float: left;*/
+	/* some height would be nice */
+/*	line-height: 3em;*/
+	/* adjusting height */
+	display: block; /* or inline-block */
+}
+ul li a.line {
+    color: #e0e0e0;
+    opacity: .6;
+        font-size: 1.35vw;
+    	padding: 4vh 0vw;
+}
+
+ul li a:hover {
+	background: #000080;
+	color: #e3e3e3;
+}
+
+ul li a.line:hover {
+	background: #fff;
+	color: #e3e3e3;
+}
+
+.tab {
+    text-align: center;
+/*    width: 100%;*/
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: #990a00;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+        text-align: center;
+    
+            font-family: SF-Orson; font-size: 1.25vw;
+/*    font-family: 'Alex Brush';font-size: 22px;*/
+    color: #fcf7f7;
+  background-color: inherit;
+/*    border: none;*/
+    border-width: 0vw .05vw 0vw .05vw;  
+border-style: none dotted none dotted;
+border-color: #fff #fff #fff #fff;
+    border: none;
+  float: left;
+  border-left-color: #dbdbdb;
+    
+  outline: none;
+  cursor: pointer;
+/*  padding: 4px .489%;*/
+  transition: .3s;
+/*  font-size: 17px;*/
+}
+.starttab {
+        float:none
+    display: inline-block;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #822727;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+/*  padding: 6px 12px;*/
+  border: 1px solid #ccc;
+  border-top: none;
+}
+* {box-sizing:border-box}
+
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+  background: transparent;
+  border: 1px solid #e1e1e1;
+  font: 12px/1.2 "Oswald", sans-serif;
+  letter-spacing: 0.4em;
+  text-align: center;
+  text-indent: 2px;
+  text-transform: uppercase;
+  transition: color 0.1s linear 0.05s;
+}
+.btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #e1e1e1;
+  z-index: 1;
+  opacity: 0;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+.btn::after {
+  transition: border 0.1s linear 0.05s;
+}
+.btn .btn-inner {
+  position: relative;
+  z-index: 2;
+}
+.btn:hover {
+  color: #373737;
+  transition: color 0.1s linear 0s;
+}
+.btn:hover::before {
+  top: 0;
+  height: 100%;
+  opacity: 1;
+  transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+.btn:hover::after {
+  border-color: #373737;
+  transition: border 0.1s linear 0s;
+}
+
+div.topline {
+      padding: 0px;
+    margin-bottom: 0px;
+/*  text-align: center;*/
+/*  background: #FFD700;*/
+  background: #9f1d35;
+}
+
+.topline img {
+    height: 70px;
+}
+
+.header {
+    width: 100%;
+    padding: 7px;
+/*    margin-top: 7px;*/
+/*    margin-left: 15px;*/
+/*    margin-bottom: 10px;*/
+/*  padding: 40px;*/
+/*  text-align: center;*/
+  background: #000080;
+  color: black;
+/*  font-size: 20px;*/
+}
+.header2 {
+    padding: 0;
+        margin-top: 0px;
+    margin-bottom: 0px;
+/*  padding: px;*/
+/*  text-align: center;*/
+  background: #fff;
+  color: white;
+/*  font-size: 30px;*/
+}
+.spreadout {
+    margin-right: 10vw;
+    margin-bottom: -4px;
+text-align:justify;
+/*
+        margin-top: 10px;
+    margin-bottom: 10px;
+*/
+/*  padding: 1px;*/
+/*  text-align: center;*/
+/*  background: #942925;*/
+/*  color: white;*/
+/*  font-size: 30px;*/
+}
+
+.topline .spreadout {
+    margin-right: 18vw;
+    margin-bottom: 0px;
+text-align:justify;
+/*
+        margin-top: 10px;
+    margin-bottom: 10px;
+*/
+/*  padding: 1px;*/
+/*  text-align: center;*/
+/*  background: #942925;*/
+/*  color: white;*/
+/*  font-size: 30px;*/
+}
+
+.header3 {
+  padding: 2px;
+/*  text-align: center;*/
+  background: #89cff0;
+  color: white;
+  font-size: 0px;
+          box-shadow: 0px 5px 5px #27272780;
+-webkit-box-shadow: 0px 5px 5px #27272780;
+-moz-box-shadow: 0px 5px 5px #27272780;
+position: relative;
+z-index: 999999;
+}
+
+.header4 {
+    font: 300 28px "Oswald", sans-serif;
+  padding: 10px 85px 10px 95px;
+  text-align: center;
+  background: #9f1d35;
+    font-weight: 500;
+/*    text-align: center;*/
+/*
+  background: #000080;
+    background: #89cff0;
+*/
+  color: #fff;
+position: relative;
+z-index: 999999;
+}
+.header4 .text{
+    font: 300 28px "Oswald", sans-serif;
+  text-align: center;
+  background: #9f1d35;
+    font-weight: 500;
+    
+/*    text-align: center;*/
+/*
+  background: #000080;
+    background: #89cff0;
+*/
+  color: #fff;
+position: relative;
+z-index: 999999;
+}
+.header4 .subtext {
+      color: #DAA520;
+        font: 300 15px "Oswald", sans-serif;
+  padding: 2px;
+    margin-top: 0px;
+    margin-left: 10px;
+/*  text-align: center;*/
+    opacity: .9;
+  background: transparent;
+position: relative;
+z-index: 999999;
+}
+.footer {
+    
+    padding: 220px;
+    background: #001f52;
+    color: white;
+}
+
+
+body {
+    background: #fff;
+/*    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);*/
+    color: #0083e8;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0px;
+padding:0px;
+/*    line-height: 1.5;*/
+/*    margin: 0 auto;*/
+/*    max-width: 800px;*/
+/*    padding: 2em 2em 4em;*/
+}
+
+h1 {
+    float: right;
+    margin-right: 20px;
+        color: #222;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h3, h4, h5, h6 {
+    color: #222;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h2 {
+/*    margin-top: 1.3em;*/
+    color: #255;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.bullet {
+    margin-left: 20px;
+}
+
+a {
+    font: 300 50px/1.2 "Oswald", sans-serif;
+/*    font-family: SF-Orson; font-size: 30px;*/
+/*    font-family: 'Alex Brush';font-size: 22px;*/
+/*    font-family: 'Righteous';font-size: 22px;*/
+    color: #fcf7f7;
+    
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+.pagebreak-blue {
+    padding: 2.5px;
+    background: #000080;
+}
+.pagebreak-red {
+    padding: 2.5px;
+    background: #9f1d35;
+}
+
+img {
+/*
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 0px solid rgba(255, 0, 0, 0.32);
+    border-radius: 4px;
+*/
+/*    display: block;*/
+/*    margin: 1.3em auto;*/
+/*    max-width: 95%;*/
+/*    float: left;*/
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}
