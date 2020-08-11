@@ -205,7 +205,7 @@ ul img {
     padding: 5px;
     float: left;
     margin-bottom: 5px;
-    margin-left: 10vw;
+    margin-left: 15vw;
 /*    background-color: #fff;*/
 }
 
@@ -350,6 +350,300 @@ border-color: #fff #fff #fff #fff;
   transition: border 0.1s linear 0s;
 }
 
+.slideshow {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  z-index: 1;
+}
+.slideshow .slideshow-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slideshow .slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.slideshow .slide {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.slideshow .slide.is-active {
+  display: block;
+}
+.slideshow .slide.is-loaded {
+  opacity: 1;
+}
+.slideshow .slide .caption {
+  padding: 0 100px;
+}
+.slideshow .slide .image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  z-index: 1;
+  background-size: cover;
+  image-rendering: optimizeQuality;
+}
+.slideshow .slide .image-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.slideshow .slide .image {
+  width: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.slideshow .slide .slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slideshow .slide .title {
+  margin: 0 auto 15px;
+  max-width: 1000px;
+    font: 500 5vw/1.2 "Oswald", sans-serif;
+
+/*  font: 300 50px/1.2 "Oswald", sans-serif;*/
+/*  letter-spacing: 0.35em;*/
+    position: absolute;
+  text-transform: uppercase;
+        top: 10px;
+    opacity: .8;
+    left: 10px;
+}
+.slideshow .slide .caption img {
+height: 4vw;
+        position: absolute;
+
+    right: 1vw;
+    bottom: 1vw;
+}
+.slideshow .slide .text {
+  margin: 0 auto;
+  max-width: 1000px;
+          background: -webkit-linear-gradient(#fff, #8c8c8c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 5vw;
+  line-height: 1.4;
+}
+.slideshow .slide1 .title {
+/*
+    top: 100px;
+    left: 20px;
+    color: #89cff0;
+    opacity: .6;
+*/
+}
+.slideshow .slide1 .text {
+        top: 13vw;
+    right: 10vw;
+    position: absolute;
+    font: 300 5vw/1.2 "Oswald", sans-serif;
+  font-size: 3.4vw;
+  line-height: 1.4;
+}
+.slideshow .slide2 .title {
+/*
+    top: 100px;
+    left: 500px;
+    color: #ebd1b0;
+    opacity: .6;
+*/
+}
+.slideshow .slide2 .text {
+        top: 26vw;
+    right: 10vw;
+    position: absolute;
+    font: 300 5vw/1.2 "Oswald", sans-serif;
+/*
+      background: -webkit-linear-gradient(#fff, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+*/
+  font-size: 3.4vw;
+  line-height: 1.4;
+}
+.slideshow .slide3 .title {
+/*
+    top: 100px;
+    left: 20px;
+    color: #89cff0;
+    opacity: .6;
+*/
+}
+.slideshow .slide3 .text {
+            top: 26vw;
+    right: 10vw;
+        top: 170px;
+    left: 50px;
+    position: absolute;
+    font: 300 5vw/1.2 "Oswald", sans-serif;
+/*
+      background: -webkit-linear-gradient(#fff, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+*/
+  font-size: 3.4vw;
+  line-height: 1.4;
+}
+.slideshow .slide4 .title {
+/*
+    top: 100px;
+    left: 500px;
+    color: #ebd1b0;
+    opacity: .6;
+*/
+}
+.slideshow .slide4 .text {
+        top: 170px;
+    left: 50px;
+    position: absolute;
+    font: 300 5vw/1.2 "Oswald", sans-serif;
+/*
+      background: -webkit-linear-gradient(#fff, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+*/
+  font-size: 3.4vw;
+  line-height: 1.4;
+}
+.slideshow .slide1 .btn {
+  margin: 15px 0 0;
+  border-color: #fff;
+}
+.slideshow .slide1 .btn::before {
+  background: #fff;
+}
+.slideshow .pagination {
+  position: absolute;
+  bottom: 35px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  cursor: default;
+  z-index: 2;
+  text-align: center;
+}
+.slideshow .pagination .item {
+          padding: 15px 5px;
+
+  display: inline-block;
+  position: relative;
+  width: 46px;
+  height: 32px;
+  cursor: pointer;
+  text-indent: -999em;
+  z-index: 1;
+}
+.slideshow .pagination .item + .page {
+  margin-left: -2px;
+}
+.slideshow .pagination .item::before {
+    
+  content: "";
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+  width: 36px;
+  height: 5px;
+
+  background: rgba(255, 255, 255, 0.5);
+    
+    border-bottom-color: #ff9900;
+  transition: background .2s ease;
+    transition: top .2s ease;
+        transition: padding 0.2s ease;
+
+/*    transition: height .2s ease;*/
+}
+.slideshow .pagination .item::after {
+  width: 0;
+  top: 5px;
+/*        height: 2px;*/
+  background: #9f1d35;
+  z-index: 2;
+    transition: padding 0.2s ease;
+  transition: width 0.2s ease;
+}
+.slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
+  background-color: #9f1d35;
+    height: 6px;
+    top: 14px;
+/*    margin-left: 10px;*/
+}
+.slideshow .arrows .arrow {
+  margin: -33px 0 0;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  z-index: 3;
+}
+.slideshow .arrows .prev {
+  left: 30px;
+}
+.slideshow .arrows .prev:hover .svg {
+  left: -10px;
+    fill: #fff;
+}
+.slideshow .arrows .next {
+  right: 30px;
+}
+.slideshow .arrows .next:hover .svg {
+  left: 10px;
+    fill: #fff;
+}
+.slideshow .arrows .svg {
+  position: relative;
+  left: 0;
+  width: 14px;
+  height: 26px;
+  fill: rgba(255, 255, 255, 0.5);;
+     transition: fill 0.2s ease;
+  transition: left 0.2s ease;
+}
+
+.links{
+    float: right;
+}
+
 div.topline {
       padding: 0px;
     margin-bottom: 0px;
@@ -385,7 +679,7 @@ div.topline {
 /*  font-size: 30px;*/
 }
 .spreadout {
-    margin-right: 10vw;
+    margin-right: 15vw;
     margin-bottom: -4px;
 text-align:justify;
 /*
@@ -472,7 +766,7 @@ z-index: 999999;
 .icons-content {
     text-align: center;
     background: #FAF0E6;
-    padding: 0px;
+    padding: 40px;
 }
 .icons {
     width: 100%;
@@ -481,11 +775,11 @@ z-index: 999999;
 .column {
   float: left;
   width: 33.3333333%;
-  padding: 70px;
+  padding: 40px;
 }
 .row {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 /* Clearfix (clear floats) */
@@ -499,14 +793,38 @@ z-index: 999999;
     background: #FAF0E6;
     padding: 0px;
     position: relative;
-        border-radius: 100%;
-    border: 5px solid #001f52;
-/*    opacity: .8;*/
+    opacity: .8;
+}
+.icons-content .skyline img{
+    height: 13vh;
+    opacity: 1;
+    bottom: -45px;
+    right: 500px;
+    margin-top: -90px;
+    position: relative;
+    background: transparent;
+
+}
+.icons-content img:hover {
+    text-align: center;
+    background: #FAF0E6;
+    padding: 0px;
+    position: relative;
+    opacity: 1;
+}
+.icons-content .skyline img:hover{
+    height: 13vh;
+    opacity: 1;
+    bottom: -45px;
+    right: 500px;
+    margin-top: -90px;
+    position: relative;
+    background: transparent;
 }
 .icons-content .title {
     color: #9f1d35;
 /*    color: linear-gradient(90deg, #001f52 25%, #9f1d35 25%);*/
-        font: 600 50px/1.2 "Oswald", sans-serif;
+        font: 300 50px/1.2 "Oswald", sans-serif;
     font-weight: bold;
     
 }
@@ -520,10 +838,8 @@ z-index: 999999;
     text-align: center;
     color: black;
     font-weight: 900;
-    margin-left: -500px;
-        margin-right: -500px;
-/*    margin-top: 20px;*/
-    font: 600 4.2vw/1.2 "Oswald", sans-serif;
+    margin-top: 20px;
+    font: 300 30px/1.2 "Oswald", sans-serif;
 }
 .icons-content .info {
     margin-top: 0px;
@@ -531,42 +847,77 @@ z-index: 999999;
     font: 300 15px/1.2 "Oswald", sans-serif;
     
 }
-.volunteers {
-    padding: 30px;
-    background: #001f52;
+.center {
+    text-align: center;
+    background-image: url("center.jpg");
+    background-size: cover;
+    padding: 150px;
 }
-.volunteers .title {
-    margin-left: 15%;
-    margin-right: 15%;
-        font: 900 5vw/1.2 "Oswald", sans-serif;
-        color: white;
-}
-.volunteers .subtitle {
-        margin-left: 15%;
-    margin-right: 15%;
-        margin-top: -.5vw;
-        font: 300 2vw/1.2 "Oswald", sans-serif;
+.center .name {
+    bottom: 210px;
+    right: 130px;
+/*    	border: 2px solid #fff;*/
+position: relative;
+    font-weight: bold;
+    background-size: auto;
+padding: 20px;
+    width: 550px;
     color: white;
-
+    font: 500 50px/1.2 "Oswald", sans-serif; 
+    background: #9f1d35;
 }
-.volunteers .text {
-        margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 20px;
-        font: 300 1.5vw/1.2 "Oswald", sans-serif;
-        color: white;
-
+.center .address {
+        right: 130px;
+bottom: 20px;
+/*    	border: 2px solid #fff;*/
+position: relative;
+        font-weight: bold;
+    width: 700px;
+    padding: 20px;
+    color: white;
+    font: 300 30px/1.2 "Oswald", sans-serif; 
+    background: #9f1d35;
 }
-.underline {
-    padding: 5px;
-    width: 25vw;
-    margin-left: 17%;
-    margin-top: 5px;
-    margin-bottom: 19px;
-    background-color: #9f1d35;
+.video-content {
+    padding: 100px;
+/*
+    background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+    background-size: cover;
+*/
+background: linear-gradient(135deg, #001f52 0%, #001f52 5%, #FAF0E6 5%, #FAF0E6 5.5%, #FF69B4 5.5%, #9f1d35 25%, #FAF0E6 25%, #FAF0E6 25.5%, #001f52 25%, #006080 100%);    
+    text-align: center;
+}
+.video-content .video {
+      border: 1px solid;
+/*  padding: 10px;*/
+  box-shadow: 0px 0px 18px #000;
+    position: relative;
+    bottom: 0px;
+    right: 370px;
+	margin: 0 auto;
+	border: 2px solid #fff;
+}
+.video-content .text {
+    bottom: 415px;
+    left: 65px;
+    float: right;
+    font-weight: bold;
+        font: 300 50px/1.2 "Oswald", sans-serif;
+    position: relative;
+color: white;
+}
+.video-content .information {
+    left: 65px;
+    top: 10px;
+    width: 700px;
+    top: 0px;
+    float: right;
+        font: 300 30px/1.2 "Oswald", sans-serif;
+color: white;
+    position: relative;
 }
 .sponsors {
-    font: 600 20px/1.2 "Oswald", sans-serif;
+    font: 300 20px/1.2 "Oswald", sans-serif;
     text-align: center;
     color: black;
     padding: 50px;
@@ -591,9 +942,7 @@ z-index: 999999;
 
 
 body {
-    margin-left: 10%;
-        margin-right: 10%;
-    background: #9f1d35;
+    background: #fff;
 /*    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);*/
     color: #0083e8;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -643,64 +992,9 @@ b, strong {
 samp {
     display: none;
 }
-.jordann {
-    margin-top: 20px;
-        margin-bottom: 20px;;
-    margin-left: 5%;
-        margin-right: 5%;
-/*    border: 5px solid #001f52;*/
-
-    background: #9f1d35;
-      font: 1vw/1.2 "Oswald", sans-serif;
-    overflow: auto; /* so the size of the wrapper is alway the size of the longest content */
-}
-.jordann img {
-/*    display: inline-block;*/
-
-/*        padding: .5vw;*/
-
-        float: left;
-/*    margin-bottom: 20px;*/
-    height: 20vw;
-    width: 20vw;
-    margin-right: 1%;
-/*    position: relative;*/
-/*      object-fit: cover;*/
-/*    border: 10px solid #9f1d35;*/
-}
-.jordann .text {
-/*    display: inline-block;*/
-/*margin-left: 1vw;*/
-margin-top: 10px;
-    /*        float: right;*/
-/*    margin-bottom: 20px;*/
-/*    height: 30vw;*/
-    width: 100%;
-    color: white;
-    font-weight: 300;
-    position: relative;
-    font-size: 1.2vw;
-/*      object-fit: cover;*/
-/*    border: 10px solid*/
-}
-.jordann .title {
-/*    display: inline-block;*/
-/*margin-left: 1vw;*/
-margin-top: 10px;
-    /*        float: right;*/
-/*    margin-bottom: 20px;*/
-/*    height: 30vw;*/
-    width: 100%;
-    color: white;
-    font-weight: 900;
-    position: relative;
-    font-size:3.3vw;
-/*      object-fit: cover;*/
-/*    border: 10px solid*/
-}
 .pagebreak-blue {
-    padding: 10px;
-    background: #001f52;
+    padding: 2.5px;
+    background: #000080;
 }
 .pagebreak-red {
     padding: 2.5px;
