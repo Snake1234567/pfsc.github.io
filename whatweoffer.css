@@ -498,10 +498,12 @@ z-index: 999999;
     margin-right: 5%;
     position: relative;
       object-fit: cover;
-    border-bottom: 10px solid #001f52;
+    border-bottom: 10px solid #9f1d35;
 
 }
 .section {
+    opacity: .8;
+/*    border: 10px solid #000080;*/
     margin-top: 30px;
         margin-bottom: 30px;
 display: inline-block;
@@ -509,11 +511,22 @@ display: inline-block;
       box-shadow: 0px 0px 18px #000;
 
 }
+.infographics .section {
+    width: 100%;
+    float: left;
+}
+.infographics .numberone {
+    width: 100%;
+        float: left;
+}
+.infographics .numbertwo {
+    
+}
 .title {
     margin-top: 20px;
         margin-left: 5%;
 
-    background: #001f52;
+    background: #9f1d35;
         float: left;
     color: white;
             font: 900 2vw "Oswald", sans-serif;
@@ -525,13 +538,21 @@ width: 50%;
     margin-left: 5%;
         color: black;
 
-            font: 300 1vw "Oswald", sans-serif;
+            font: 300 .9vw "Oswald", sans-serif;
 
 }
 
 
 body {
-    background: #9f1d35;
+    background: linear-gradient(
+      rgba(0, 31, 82, .85), 
+      rgba(0, 31, 82, .85)
+    ), url("cathedral.jpg");
+            url("volunteer2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    height: 100%;
 /*    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);*/
     color: #0083e8;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
